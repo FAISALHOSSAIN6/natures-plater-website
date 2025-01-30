@@ -22,6 +22,7 @@
           --color-common: #179800;
           --font-sora:"Sora", serif;
           --color-2secondary:#EFEBE3;
+          /* --bg-gradient: {background-image: linear-gradient(to bottom right, green, white);} */
         }
       </style>
 </head>
@@ -52,10 +53,12 @@
         <!-- hero section -->
         <div class="my-14">
             <div class="flex flex-col justify-center">
-                <h1 class="text-center text-4xl md:text-5xl font-bold">Freshness <span class="text-common"> You Can <br> Count
+                <h1 class="text-center text-4xl md:text-5xl font-bold">Freshness <span class="text-common"> You Can <br>
+                        Count
                     </span>
                     On, Prices You’ll Love!</h1>
-                    <p class="text-center mt-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                <p class="text-center mt-5">Shop your daily essentials at unbeatable prices. From fresh produce to
+                    pantry <br> staples, we’ve got you covered every day!</p>
             </div>
             <div class="flex justify-center">
                 <img class="text-center" src="c2-assets/hero-vegetables.png" alt="">
@@ -64,7 +67,172 @@
 
     </header>
     <main>
-
+        <!-- Services section -->
+        <section class="w-10/12 mx-auto my-24">
+            <div class="my-9">
+                <h2 class="text-common text-2xl font-bold">Services</h2>
+            </div>
+            <div class="flex flex-col gap-5 md:flex-row">
+                <!-- card 1 -->
+                <div class="card bg-2secondary w-96 shadow-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="c2-assets/service.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-black font-bold">24/7 Services</h2>
+                        <p class="text-center">Offering 24/7 services can increase customer satisfaction, improve
+                            business continuity, and build trust.</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-2secondary w-96 shadow-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="c2-assets/delivery.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-black font-bold">24/7 Fast Delivery</h2>
+                        <p class="text-center">Whether you’re looking for fresh greens, root vegetables, or seasonal
+                            specialties, we offer same-day or next-day delivery depending on your location. </p>
+                    </div>
+                </div>
+                <!-- card 3  -->
+                <div class="card bg-2secondary w-96 shadow-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="c2-assets/healthy.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-black font-bold">24/7 Healthy Products </h2>
+                        <p class="text-center">Healthy food vegetable products are fresh, nutrient-packed vegetables
+                            that provide essential vitamins, minerals, and fiber to support a balanced diet and promote
+                            overall health.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Products -->
+        <section class="bg-2secondary pb-24">
+            <div class="w-11/12 md:w-10/12 mx-auto">
+                <div class="py-14">
+                    <h2 class="text-common font-bold text-2xl">Popular Products</h2>
+                </div>
+                <!-- product container -->
+                <div class="flex flex-col gap-10  md:flex-row justify-between">
+                    <div class="bg-green-500 pt-9 px-5 rounded-xl">
+                        <div class="space-y-4">
+                            <h1 class="text-white font-bold text-xl">30% Off</h1>
+                            <p>
+                                Vegetables are plant-based foods that are <br> packed with nutrients.</p>
+                            <button class="bg-white rounded-lg px-5 py-3 text-black text-sm">Buy Now</button>
+                        </div>
+                        <div class="flex justify-end">
+                            <img src="c2-assets/vegetable-offer.png" alt="">
+                        </div>
+                    </div>
+                    <!-- grid section -->
+                    <div class="grid grid-cols-2 gap-5 md:grid-cols-3">
+                        <!-- grid 1 -->
+                        <div class="">
+                            <div class="hero-content  lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Onion 1 KG</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 2 -->
+                        <div class="">
+                            <div class="hero-content  lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16 (1).png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Tomato 500g</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 3 -->
+                        <div class="">
+                            <div class="hero-content lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16 (2).png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Potato 1 KG</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 4 -->
+                        <div class="">
+                            <div class="hero-content lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16 (1).png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Tomato 500g</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 5 -->
+                        <div class="">
+                            <div class="hero-content lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Onion 1 KG</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 6 -->
+                        <div class="">
+                            <div class="hero-content lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16 (1).png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Tomato 500g</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 7-->
+                        <div class="">
+                            <div class="hero-content lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16.png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Onion 1 KG</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 8 -->
+                        <div class="">
+                            <div class="hero-content lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16 (2).png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Potato 1 KG</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- grid 9 -->
+                        <div class="">
+                            <div class="hero-content hidden md:flex lg:flex-row bg-white rounded-xl">
+                                <img src="Group 16 (2).png" class="max-w-sm rounded-lg shadow-2xl" />
+                                <div>
+                                    <p> <i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                                    <h1 class="text-sm font-bold">Potato 1 KG</h1>
+                                    <p>$3.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
