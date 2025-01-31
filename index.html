@@ -22,6 +22,7 @@
           --color-common: #179800;
           --font-sora:"Sora", serif;
           --color-2secondary:#EFEBE3;
+         --color-3third:#63B76D;
           /* --bg-gradient: {background-image: linear-gradient(to bottom right, green, white);} */
         }
       </style>
@@ -29,7 +30,7 @@
 
 <body class="font-sora">
     <header class=" bg-linear-to-t from-2secondary to-white">
-        <nav class="w-10/12 mx-auto flex justify-between pt-5 md:pt-5">
+        <nav class="md:w-10/12 mx-auto flex justify-between pt-5 md:pt-5 border-b-2 border-green-500 md:border-b-0 ">
             <div class="flex items-center">
                 <img class=" hidden md:flex " src="c2-assets/logo-header.png" alt="">
                 <img class="md:hidden" src="Group.png" alt="">
@@ -66,7 +67,8 @@
         </div>
 
     </header>
-    <main>
+
+    <main class="mb-88">
         <!-- Services section -->
         <section class="w-10/12 mx-auto my-24">
             <div class="my-9">
@@ -117,11 +119,11 @@
                 </div>
                 <!-- product container -->
                 <div class="flex flex-col gap-10  md:flex-row justify-between">
-                    <div class="bg-green-500 pt-9 px-5 rounded-xl">
+                    <div class=" bg-linear-to-br from-common to-white pt-9 px-5 rounded-xl">
                         <div class="space-y-4">
                             <h1 class="text-white font-bold text-xl">30% Off</h1>
                             <p>
-                                Vegetables are plant-based foods that are <br> packed with nutrients.</p>
+                                Vegetables are plant-based foods that are packed with nutrients.</p>
                             <button class="bg-white rounded-lg px-5 py-3 text-black text-sm">Buy Now</button>
                         </div>
                         <div class="flex justify-end">
@@ -233,9 +235,102 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- Arrival & Offers design -->
+        <div class="my-24 w-11/12 mx-auto">
+            <div>
+                <h2 class="text-common font-bold text-2xl">Arrival & Offers</h2>
+            </div>
+            <!-- Arrival & Offers product container -->
+            <div class="flex flex-col md:flex-row  gap-5">
+                <div class="bg-[#115414] mt-10 flex justify-around items-center pl-4 rounded-xl md:grow-3">
+                    <div class="space-y-6 flex flex-col items-start">
+                        <img src="c2-assets/dawat-logo.png" alt="">
+                        <button class="bg-[#63B76D] text-white rounded-lg  px-2 py-3">Cook Exotic Dishes</button>
+                        <h2 class="text-white font-semibold text-xl md:text-2xl ">UP to 20% OFF</h2>
+                    </div>
+                    <div>
+                        <img class="pt-8" src="c2-assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#102861] mt-10 flex justify-around items-center  md:grow-0   rounded-xl">
+                    <div class="space-y-3 flex flex-col items-start pl-4">
+                        <img src="c2-assets/india-gate-logo.png" alt="">
+                        <button class="bg-[#2A4D97] text-white rounded-lg  px-5 py-3">World’s No.1 Rice</button>
+                        <h2 class="text-white font-semibold text-xl md:text-2xl">UP to 40% OFF</h2>
+                    </div>
+                    <div>
+                        <img class="pt-10 h-auto" src="c2-assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+    </main>
+    <footer class="bg-common relative  ">
+
+        <!-- <div class="bg-2secondary  w-10/12 mx-auto rounded-2xl ">
+            <div class="hero-content flex-col lg:flex-row justify-around">
+                <div>
+                    <img src="c2-assets/vegetable-busket.png" class=" rounded-lg" />
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-4xl md:text-5xl font-bold">Get Grocery News!</h1>
+                    <p class="py-6 text-center md:text-justify">
+                        Exclusive training tips, ticks, product deals and more.
+                    </p>
+                    <input class="bg-white py-3 pr-20 pl-2 rounded-xl" type="email" name="" id="" placeholder="Enter email....">
+                    <div class="flex justify-center md:justify-start">
+                        <button class="bg-[#179800]  text-white rounded-lg mt-5 px-5 py-2">Subscribe</button>
+                    </div>
+                 
+                </div>
+            </div>
+        </div> -->
+        <div class="bg-2secondary w-10/12 mx-auto rounded-2xl absolute -top-72 left-10 md:-top-60 md:left-24 ">
+            <div class="hero-content flex-col lg:flex-row justify-around">
+                <div>
+                    <img src="c2-assets/vegetable-busket.png" class=" rounded-lg" />
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-4xl md:text-5xl font-bold">Get Grocery News!</h1>
+                    <p class="py-6 text-center md:text-justify">
+                        Exclusive training tips, ticks, product deals and more.
+                    </p>
+                    <input class="bg-white py-3 pr-20 pl-2 rounded-xl" type="email" name="" id=""
+                        placeholder="Enter email....">
+                    <div class="flex justify-center md:justify-start">
+                        <button class="bg-[#179800]  text-white rounded-lg mt-5 px-5 py-2">Subscribe</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=" w-10/12 pl-10  space-y-8 py-40  flex flex-col md:flex-row md:justify-between md:items-end md:mx-auto ">
+            <div class="mt-56 md:mt-10 ">
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="text-white mt-5">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+            </div>
+            <div class="flex flex-col text-white gap-5">
+                <a href="">Product</a>
+                <a href="">Services</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div>
+                <h4 class="text-white pb-4 font-semibold">Follow Us</h4>
+                <div>
+                    <i class=" text-white pr-3 text-xl fa-brands fa-facebook"></i>
+                    <i class=" text-white pr-3 text-xl fa-brands fa-instagram"></i>
+                    <i class=" text-white pr-3 text-xl fa-brands fa-linkedin"></i>
+                    <i class=" text-white pr-3 text-xl fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
