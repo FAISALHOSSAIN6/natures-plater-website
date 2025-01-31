@@ -26,6 +26,25 @@
           /* --bg-gradient: {background-image: linear-gradient(to bottom right, green, white);} */
         }
       </style>
+      <style>
+        @keyframes heartbeat {
+                0%{
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                50%{
+                    transform: scale(1.1);
+                    opacity: 0.7;
+                }
+                100%{
+                    transform: scale(1);
+                    opacity: 1;
+                }
+        }
+        .animation-heartbeat{
+            animation: heartbeat 1.5s infinite ;
+        }
+      </style>
 </head>
 
 <body class="font-sora">
@@ -62,7 +81,7 @@
                     pantry <br> staples, we’ve got you covered every day!</p>
             </div>
             <div class="flex justify-center">
-                <img class="text-center" src="c2-assets/hero-vegetables.png" alt="">
+                <img class="transform transition duration-500 ease-in-out animation-heartbeat" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </div>
 
@@ -76,9 +95,9 @@
             </div>
             <div class="flex flex-col  md:flex-row gap-5">
                 <!-- card 1 -->
-                <div class="card bg-2secondary w-full  md:w-96 shadow-xl">
+                <div class="card bg-2secondary w-full ">
                     <figure class=" pt-10 ">
-                        <img src="c2-assets/service.png" alt="Shoes" class="" />
+                        <img src="c2-assets/service.png" alt="Shoes" class="p-3 bg-white rounded-full " />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-black font-bold">24/7 Services</h2>
@@ -87,9 +106,9 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="card bg-2secondary w-full md:w-96 shadow-xl">
-                    <figure class="px-10 pt-10 ">
-                        <img src="c2-assets/delivery.png" alt="Shoes" class="" />
+                <div class="card bg-2secondary w-full ">
+                    <figure class="pt-10">
+                        <img src="c2-assets/delivery.png" alt="Shoes" class="bg-white rounded-full p-3" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-black font-bold">24/7 Fast Delivery</h2>
@@ -98,9 +117,9 @@
                     </div>
                 </div>
                 <!-- card 3  -->
-                <div class="card bg-2secondary w-full  md:w-96 shadow-xl">
-                    <figure class="px-10 pt-10 ">
-                        <img src="c2-assets/healthy.png" alt="Shoes" class="" />
+                <div class="card bg-2secondary w-full  ">
+                    <figure class=" pt-10 ">
+                        <img src="c2-assets/healthy.png" alt="Shoes" class="bg-white rounded-full p-3" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-black font-bold">24/7 Healthy Products </h2>
@@ -266,30 +285,10 @@
             </div>
         </div>
         <div>
-            
+
         </div>
     </main>
-    <footer class="bg-common relative  ">
-
-        <!-- <div class="bg-2secondary  w-10/12 mx-auto rounded-2xl ">
-            <div class="hero-content flex-col lg:flex-row justify-around">
-                <div>
-                    <img src="c2-assets/vegetable-busket.png" class=" rounded-lg" />
-                </div>
-
-                <div class="flex flex-col justify-center">
-                    <h1 class="text-4xl md:text-5xl font-bold">Get Grocery News!</h1>
-                    <p class="py-6 text-center md:text-justify">
-                        Exclusive training tips, ticks, product deals and more.
-                    </p>
-                    <input class="bg-white py-3 pr-20 pl-2 rounded-xl" type="email" name="" id="" placeholder="Enter email....">
-                    <div class="flex justify-center md:justify-start">
-                        <button class="bg-[#179800]  text-white rounded-lg mt-5 px-5 py-2">Subscribe</button>
-                    </div>
-                 
-                </div>
-            </div>
-        </div> -->
+    <footer class="bg-common relative ">
         <div class="bg-2secondary w-10/12 mx-auto rounded-2xl absolute -top-72 left-10 md:-top-60 md:left-24 ">
             <div class="hero-content flex-col lg:flex-row justify-around">
                 <div>
@@ -311,10 +310,12 @@
             </div>
         </div>
 
-        <div class=" w-10/12 pl-10  space-y-8 py-40  flex flex-col md:flex-row md:justify-between md:items-end md:mx-auto ">
+        <div
+            class=" w-10/12 pl-10  space-y-8 py-40  flex flex-col md:flex-row md:justify-between md:items-end md:mx-auto ">
             <div class="mt-56 md:mt-10 ">
                 <img src="c2-assets/logo-footer.png" alt="">
-                <p class="text-white mt-5">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+                <p class="text-white mt-5">Discover a world of treats, toys, and <br> essentials handpicked for your
+                    furry <br> friends</p>
             </div>
             <div class="flex flex-col text-white gap-5">
                 <a href="">Product</a>
